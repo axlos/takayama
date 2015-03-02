@@ -1,12 +1,5 @@
 # takayama
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
+This is a front-end project based on angular which consist in product administrator for an oDesk client.
+
 version 0.11.1.
-
-## Build & development
-
-Run `grunt` for building and `grunt serve` for preview.
-
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
