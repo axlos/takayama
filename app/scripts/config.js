@@ -1,6 +1,6 @@
 function config($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise("/index/dashboard");
+    $urlRouterProvider.otherwise("/index/profile");
 
     $stateProvider
     .state('index', {
@@ -19,6 +19,13 @@ function config($stateProvider, $urlRouterProvider) {
         controller: 'DashboardCtrl',
         controllerAs: 'dashboard',
         data: { pageTitle: 'Dashboard' }
+    })
+    .state('index.profile', {
+        url: "/profile",
+        templateUrl: "views/profile.html",
+        controller: 'ProfileCtrl',
+        controllerAs: 'profile',
+        data: { pageTitle: 'Profile' }
     });
 }
 
