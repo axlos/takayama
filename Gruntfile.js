@@ -188,6 +188,17 @@ module.exports = function (grunt) {
         }
     });
 
+    grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
+      if (target === 'dist') {
+        return grunt.task.run(['build', 'connect:dist:keepalive']);
+      }
+      grunt.task.run([
+        'clean:server',
+        'connect:livereload',
+        'watch'
+      ]);
+    });
+
     // Run live version of app
     grunt.registerTask('live', [
         'clean:server',
@@ -195,6 +206,13 @@ module.exports = function (grunt) {
         'connect:livereload',
         'watch'
     ]);
+
+    'clean:server',
+      'wiredep',
+      'concurrent:server',
+      'autoprefixer:server',
+      'connect:livereload',
+      'watch'
 
     // Run build version of app
     grunt.registerTask('server', [
