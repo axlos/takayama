@@ -1,17 +1,6 @@
-'use strict';
+function MainCtrl() {
+    this.userName = 'Alex Takayama';
+    this.descriptionText = 'oDesk project';
+};
 
-/**
- * @ngdoc function
- * @name takayamaApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the takayamaApp
- */
-angular.module('takayamaApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+angular.module('inspinia').controller('MainCtrl', MainCtrl)

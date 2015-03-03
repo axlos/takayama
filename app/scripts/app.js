@@ -1,33 +1,6 @@
-'use strict';
-
-/**
- * @ngdoc overview
- * @name takayamaApp
- * @description
- * # takayamaApp
- *
- * Main module of the application.
- */
-angular
-  .module('takayamaApp', [
-    'ngAnimate',
-    'ngMessages',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
+(function () {
+  angular.module('inspinia', [
+  'ui.router',                    // Routing
+  'ui.bootstrap'                 // Bootstrap
   ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+})();
