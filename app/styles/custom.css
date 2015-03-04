@@ -25,8 +25,35 @@ button.btn-default.dimc {
   width: 100%;
 }
 
+.vertical-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 
-img.no-resize {
-  min-height: 128px;
-  min-width: 128px;
+.full-width-tabs > ul.nav.nav-tabs {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.full-width-tabs > ul.nav.nav-tabs > li {
+    float: none;
+    display: table-cell;
+}
+.full-width-tabs > ul.nav.nav-tabs > li > a {
+    text-align: center;
+}
+.take-all-space {
+    width:100%;
+}
+
+.col-p-1 {
+  padding-right:2px;
+  padding-left:2px;
+  padding-bottom: 3px;
+}
+
+.btn-block {
+  height:100%;
 }

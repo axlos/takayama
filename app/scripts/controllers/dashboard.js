@@ -1,6 +1,7 @@
-function Button(type, icon) {
+function Button(type, icon, label) {
   this.type = type;
   this.icon = icon;
+  this.label = label;
 }
 
 function Avatar(img) {
@@ -71,34 +72,34 @@ function DashboardCtrl($scope) {
 
   // create example buttons tab 1
   var groupBtn1 = [];
-  groupBtn1.push(new Button('primary', 'fa-glass'));
-  groupBtn1.push(new Button('default', 'fa-car'));
-  groupBtn1.push(new Button('primary', 'fa-paw'));
-  groupBtn1.push(new Button('default', 'fa-shield'));
-  groupBtn1.push(new Button('primary', 'fa-home'));
-  groupBtn1.push(new Button('default', 'fa-beer'));
-  groupBtn1.push(new Button('default', 'fa-briefcase'));
-  groupBtn1.push(new Button('default', 'fa-bicycle'));
-  groupBtn1.push(new Button('primary', 'fa-bomb'));
-  groupBtn1.push(new Button('primary', 'fa-bell'));
-  groupBtn1.push(new Button('success', 'fa-plus'));
-  groupBtn1.push(new Button('success', 'fa-history'));
+  groupBtn1.push(new Button('primary', 'fa-glass', 'Text 1'));
+  groupBtn1.push(new Button('default', 'fa-car', 'Text 2'));
+  groupBtn1.push(new Button('primary', 'fa-paw', 'Text 3'));
+  groupBtn1.push(new Button('default', 'fa-shield', 'Text 4'));
+  groupBtn1.push(new Button('primary', 'fa-home', 'Text 5'));
+  groupBtn1.push(new Button('default', 'fa-beer', 'Text 6'));
+  groupBtn1.push(new Button('default', 'fa-briefcase', 'Text 7'));
+  groupBtn1.push(new Button('default', 'fa-bicycle', 'Text 8'));
+  groupBtn1.push(new Button('primary', 'fa-bomb', 'Text 9'));
+  groupBtn1.push(new Button('primary', 'fa-bell', 'Text 10'));
+  groupBtn1.push(new Button('success', 'fa-plus', 'Text 11'));
+  groupBtn1.push(new Button('success', 'fa-history', 'Text 12'));
   $scope.groupBtnTab1 = groupBtn1;
 
   // create example buttons tab 2
   var groupBtn2 = [];
-  groupBtn2.push(new Button('danger', 'fa-anchor'));
-  groupBtn2.push(new Button('danger', 'fa-archive'));
-  groupBtn2.push(new Button('danger', 'fa-cab'));
-  groupBtn2.push(new Button('danger', 'fa-coffee'));
-  groupBtn2.push(new Button('default', 'fa-diamond'));
-  groupBtn2.push(new Button('primary', 'fa-globe'));
-  groupBtn2.push(new Button('danger', 'fa-lock'));
-  groupBtn2.push(new Button('default', 'fa-microphone'));
-  groupBtn2.push(new Button('danger', 'fa-pie-chart'));
-  groupBtn2.push(new Button('danger', 'fa-recycle'));
-  groupBtn2.push(new Button('success', 'fa-plus'));
-  groupBtn2.push(new Button('success', 'fa-history'));
+  groupBtn2.push(new Button('danger', 'fa-anchor', 'Text 1'));
+  groupBtn2.push(new Button('danger', 'fa-archive', 'Text 2'));
+  groupBtn2.push(new Button('danger', 'fa-cab', 'Text 3'));
+  groupBtn2.push(new Button('danger', 'fa-coffee', 'Text 4'));
+  groupBtn2.push(new Button('default', 'fa-diamond', 'Text 12'));
+  groupBtn2.push(new Button('primary', 'fa-globe', 'Text 5'));
+  groupBtn2.push(new Button('danger', 'fa-lock', 'Text 6'));
+  groupBtn2.push(new Button('default', 'fa-microphone', 'Text 7'));
+  groupBtn2.push(new Button('danger', 'fa-pie-chart', 'Text 8'));
+  groupBtn2.push(new Button('danger', 'fa-recycle', 'Text 9'));
+  groupBtn2.push(new Button('success', 'fa-plus', 'Text 10'));
+  groupBtn2.push(new Button('success', 'fa-history', 'Text 11'));
   $scope.groupBtnTab2 = groupBtn2;
 
   // create example avatars

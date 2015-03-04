@@ -1,31 +1,25 @@
 <div class="wrapper wrapper-content animated fadeInRight">
   <div class="row">
-
-<div class="center-block m-b-sm" style="height: 128px; width: 128px;">
-    <div class="ibox float-e-margins">
-      <div class="ibox-content">
-        <div class="carousel slide" id="avatars">
-          <div class="carousel-inner">
-              <div class="item">
-                  <img alt="image" src="images/a1.jpg">
-              </div>
-              <div class="item no-resize">
-                  <img alt="image" src="images/a2.jpg">
-              </div>
-              <div class="item active no-resize">
-                  <img alt="image" src="images/a3.jpg">
-              </div>
-          </div>
-          <a data-slide="prev" href="#avatars" class="left carousel-control">
-              <span class="icon-prev"></span>
-          </a>
-          <a data-slide="next" href="#avatars" class="right carousel-control">
-              <span class="icon-next"></span>
-          </a>
-        </div>
-      </div>
+    <div class="center-block">
+      <nav>
+        <ul class="pager vertical-align">
+          <li class="previous m-r-xs">
+            <button class="btn btn-default btn-circle btn-outline" type="button" ng-click="prev()">
+              <i class="fa fa-chevron-left"></i>
+            </button>
+          </li>
+          <li>
+            <img alt="image" class="img-circle" ng-src="{{current.avatar}}">
+          </li>
+          <li class="next m-l-xs">
+            <button class="btn btn-default btn-circle btn-outline" type="button" ng-click="next()">
+              <i class="fa fa-chevron-right"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
     </div>
-</div>
+
     <div class="col-lg-12">
       <div class="ibox float-e-margins">
         <div class="ibox-title">
@@ -35,36 +29,31 @@
 
           <form class="form-horizontal">
 
-            <div class="form-group"><label class="col-lg-2 control-label">Email</label>
-              <div class="col-lg-10"><input placeholder="Email" class="form-control" type="email"> <span class="help-block m-b-none">Example block-level help text here.</span>
+            <div class="form-group">
+              <label class="col-lg-2 control-label">Name</label>
+              <div class="col-lg-10">
+                <input placeholder="Email" class="form-control" ng-model="current.name">
               </div>
-            </div>
-
-            <div class="form-group"><label class="col-lg-2 control-label">Email</label>
-              <div class="col-lg-10"><input placeholder="Email" class="form-control" type="email"> <span class="help-block m-b-none">Example block-level help text here.</span>
-              </div>
-            </div>
-
-            <div class="form-group"><label class="col-lg-2 control-label">Password</label>
-              <div class="col-lg-10"><input placeholder="Password" class="form-control" type="password"></div>
             </div>
 
             <div class="form-group">
-              <label class="col-sm-2 control-label">Select</label>
-              <div class="col-sm-10">
-                <select class="form-control m-b" name="account">
-                    <option>option 1</option>
-                    <option>option 2</option>
-                    <option>option 3</option>
-                    <option>option 4</option>
-                </select>
+              <label class="col-lg-2 control-label">Email</label>
+              <div class="col-lg-10">
+                <input placeholder="Email" class="form-control" type="email" ng-model="current.email">
               </div>
             </div>
 
+            <div class="form-group">
+              <label class="col-lg-2 control-label">Age</label>
+              <div class="col-lg-10">
+                <input placeholder="Password" class="form-control" ng-model="current.age">
+              </div>
+            </div>
           </form>
 
         </div>
       </div>
     </div>
+
   </div>
 </div>
