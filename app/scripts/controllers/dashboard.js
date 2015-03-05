@@ -13,7 +13,7 @@ function Grahp(data) {
     series: {
       bars: {
         show: true,
-        barWidth: 0.6,
+        barWidth: 0.7,
         fill: true,
         fillColor: {
             colors: [{
@@ -25,18 +25,19 @@ function Grahp(data) {
       }
     },
     xaxis: {
-      tickDecimals: 0
+      tickDecimals: 0,
+      autoscaleMargin: 0.1
     },
-    colors: ["#1ab394"],
+    colors: ["#FF786A"],
     grid: {
-      color: "#999999",
+      color: "#D7D9D9",
       hoverable: true,
       clickable: true,
-      tickColor: "#D4D4D4",
+      tickColor: "#D7D9D9",
       borderWidth:0
     },
     legend: {
-      show: false
+      show: false,
     },
     tooltip: true,
     tooltipOpts: {
@@ -82,8 +83,8 @@ function DashboardCtrl($scope) {
   groupBtn1.push(new Button('default', 'fa-bicycle', 'Text 8'));
   groupBtn1.push(new Button('primary', 'fa-bomb', 'Text 9'));
   groupBtn1.push(new Button('primary', 'fa-bell', 'Text 10'));
-  groupBtn1.push(new Button('success', 'fa-plus', 'Text 11'));
-  groupBtn1.push(new Button('success', 'fa-history', 'Text 12'));
+  groupBtn1.push(new Button('success', 'fa-plus'));
+  groupBtn1.push(new Button('success', 'fa-history'));
   $scope.groupBtnTab1 = groupBtn1;
 
   // create example buttons tab 2
@@ -98,18 +99,15 @@ function DashboardCtrl($scope) {
   groupBtn2.push(new Button('default', 'fa-microphone', 'Text 7'));
   groupBtn2.push(new Button('danger', 'fa-pie-chart', 'Text 8'));
   groupBtn2.push(new Button('danger', 'fa-recycle', 'Text 9'));
-  groupBtn2.push(new Button('success', 'fa-plus', 'Text 10'));
-  groupBtn2.push(new Button('success', 'fa-history', 'Text 11'));
+  groupBtn2.push(new Button('success', 'fa-plus'));
+  groupBtn2.push(new Button('success', 'fa-history'));
   $scope.groupBtnTab2 = groupBtn2;
 
   // create example avatars
   var avatars = [];
-  avatars.push('images/a1.jpg');
-  avatars.push('images/a3.jpg');
-  avatars.push('images/a4.jpg');
-  avatars.push('images/a5.jpg');
-  avatars.push('images/a6.jpg');
-  avatars.push('images/a7.jpg');
+  avatars.push('images/a1b.png');
+  avatars.push('images/a2b.png');
+  avatars.push('images/a3b.png');
   $scope.avatars = avatars;
 };
 

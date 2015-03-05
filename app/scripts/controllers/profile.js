@@ -9,9 +9,9 @@ function User(id, name, age, email, avatar) {
 function ProfileCtrl($scope) {
   // example avatar users
   var users = [];
-  users.push(new User(1, 'Alexander Ospina', 31, 'info@alexanderospina.com', 'images/a1.jpg'));
-  users.push(new User(2, 'Alex Takayama', 28, 'alextakayama@odesk.com', 'images/a2.jpg'));
-  users.push(new User(3, 'Willsom morrison', 35, 'wilsom@odesk.com', 'images/a3.jpg'));
+  users.push(new User(1, 'Alexander Ospina', 31, 'info@alexanderospina.com', 'images/a1b.png'));
+  users.push(new User(2, 'Alex Takayama', 28, 'alextakayama@odesk.com', 'images/a2b.png'));
+  users.push(new User(3, 'Willsom morrison', 35, 'wilsom@odesk.com', 'images/a3b.png'));
   $scope.users = users;
 
   // current avatar index
