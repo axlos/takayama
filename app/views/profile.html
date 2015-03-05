@@ -22,36 +22,85 @@
 
     <div class="col-lg-12">
       <div class="ibox float-e-margins">
-        <div class="ibox-title">
-          <h5>Avatar detail</h5>
+
+        <div class="tabbable full-width-tabs">
+          <ul class="nav nav-tabs">
+            <li class="active take-all-space">
+              <a aria-expanded="true" data-toggle="tab" href="#tab-gral">ALLGEMEIN</a>
+            </li>
+            <li class="take-all-space">
+              <a aria-expanded="false" data-toggle="tab" href="#tab-hobby">BERUF / HOBBY</a>
+            </li>
+            <li class="take-all-space">
+              <a aria-expanded="false" data-toggle="tab" href="#tab-fin">FINANZEN</a>
+            </li>
+          </ul>
         </div>
-        <div class="ibox-content">
 
-          <form class="form-horizontal">
+        <div class="panel-body">
+          <div class="tab-content">
 
-            <div class="form-group">
-              <label class="col-lg-2 control-label">Name</label>
-              <div class="col-lg-10">
-                <input placeholder="Email" class="form-control" ng-model="current.name">
+            <div id="tab-gral" class="tab-pane active">
+              <form class="form-horizontal">
+
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">Alter</label>
+                  <div class="col-lg-10">
+                    <input class="form-control" ng-model="current.age">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">Geschlecht</label>
+                  <div class="col-lg-10">
+                    <select class="form-control m-b" ng-model="current.sex">
+                      <option value="unkown">Unbekannt</option>
+                      <option value="male">Männlich</option>
+                      <option value="female">Weiblich</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">Familienstand</label>
+                  <div class="col-lg-10">
+                    <select class="form-control m-b" name="status" ng-model="current.status">
+                      <option value="leding">Leding</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">Beziehung zum Haupt-Avatar</label>
+                  <div class="col-lg-10">
+                    <select class="form-control m-b" name="relationship" ng-model="current.relationship">
+                      <option value="ich">Ich</option>
+                    </select>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+
+            <div id="tab-hobby" class="tab-pane">
+              <div class="row">
+                <div class="col-md-12">
+
+                </div>
               </div>
             </div>
 
-            <div class="form-group">
-              <label class="col-lg-2 control-label">Email</label>
-              <div class="col-lg-10">
-                <input placeholder="Email" class="form-control" type="email" ng-model="current.email">
+            <div id="tab-fin" class="tab-pane">
+              <div class="row">
+                <div class="col-md-12">
+
+                </div>
               </div>
             </div>
 
-            <div class="form-group">
-              <label class="col-lg-2 control-label">Age</label>
-              <div class="col-lg-10">
-                <input placeholder="Password" class="form-control" ng-model="current.age">
-              </div>
-            </div>
-          </form>
-
+          </div>
         </div>
+
       </div>
     </div>
 

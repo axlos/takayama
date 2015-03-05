@@ -8,7 +8,7 @@
           </a>
         </li>
         <li>
-          <button class="btn btn-primary btn-circle btn-xlarge" type="button">
+          <button class="btn btn-gray btn-circle btn-xlarge" type="button">
             <i class="fa fa-plus"></i>
           </button>
         </li>
@@ -31,10 +31,10 @@
               <div class="tabbable full-width-tabs">
                 <ul class="nav nav-tabs">
                   <li class="active take-all-space">
-                    <a aria-expanded="true" data-toggle="tab" href="#tab-1">First Tab</a>
+                    <a aria-expanded="true" data-toggle="tab" href="#tab-hab">Was hab ich?</a>
                   </li>
                   <li class="take-all-space">
-                    <a aria-expanded="false" data-toggle="tab" href="#tab-2">Second Tab</a>
+                    <a aria-expanded="false" data-toggle="tab" href="#tab-bra">Was brauch ich?</a>
                   </li>
                 </ul>
               </div>
@@ -42,26 +42,26 @@
               <div class="panel-body">
                 <div class="tab-content">
 
-                  <div id="tab-1" class="tab-pane active">
+                  <div id="tab-hab" class="tab-pane active">
                     <div class="row">
                       <div class="col-md-12">
                         <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 col-p-1" ng-repeat="btn in groupBtnTab1" style= "height: 100px;">
                           <button class="btn btn-{{btn.type}} btn-block" type="button">
                             <i class="fa {{btn.icon}} fa-3x"></i>
-                            <br>{{btn.label}}
+                            <br/>{{btn.label}}
                           </button>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div id="tab-2" class="tab-pane">
+                  <div id="tab-bra" class="tab-pane">
                     <div class="row">
                       <div class="col-md-12">
                         <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 col-p-1" ng-repeat="btn in groupBtnTab2" style= "height: 100px;">
                           <button class="btn btn-{{btn.type}} btn-block" type="button">
                             <i class="fa {{btn.icon}} fa-3x"></i>
-                            <br>{{btn.label}}
+                            <br/>{{btn.label}}
                           </button>
                         </div>
                       </div>

@@ -50,7 +50,16 @@
   border-bottom: none;
 }
 .btn-gray {
-  background-color: #2D3334;
-  border-color: #384041;
-  color: #9CA0A0;
+  background-color: #4F5659;
+  border-color: #4F5659;
+}
+.btn-gray:hover{
+  color: white;
+}
+.panel-primary>.panel-heading+.panel-collapse>.panel-body {
+  border-top-color: #23CB8E;
+}
+.navbar-center {
+  float: center!important;
+  margin-right: -15px;
 }

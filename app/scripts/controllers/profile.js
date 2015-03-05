@@ -1,17 +1,18 @@
-function User(id, name, age, email, avatar) {
+function User(id, sex, age, relationship, avatar, status) {
   this.id = id;
-  this.name = name;
+  this.sex = sex;
   this.age = age;
-  this.email = email;
+  this.relationship = relationship;
   this.avatar = avatar;
+  this.status = status;
 }
 
 function ProfileCtrl($scope) {
   // example avatar users
   var users = [];
-  users.push(new User(1, 'Alexander Ospina', 31, 'info@alexanderospina.com', 'images/a1b.png'));
-  users.push(new User(2, 'Alex Takayama', 28, 'alextakayama@odesk.com', 'images/a2b.png'));
-  users.push(new User(3, 'Willsom morrison', 35, 'wilsom@odesk.com', 'images/a3b.png'));
+  users.push(new User(1, 'male', '31', 'ich', 'images/a1b.png', 'leding'));
+  users.push(new User(2, 'female', '26', 'ich', 'images/a2b.png', 'leding'));
+  users.push(new User(3, 'female', '47', 'ich', 'images/a3b.png', 'leding'));
   $scope.users = users;
 
   // current avatar index

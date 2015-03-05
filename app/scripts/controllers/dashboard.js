@@ -73,34 +73,34 @@ function DashboardCtrl($scope) {
 
   // create example buttons tab 1
   var groupBtn1 = [];
-  groupBtn1.push(new Button('primary', 'fa-glass', 'Text 1'));
-  groupBtn1.push(new Button('default', 'fa-car', 'Text 2'));
-  groupBtn1.push(new Button('primary', 'fa-paw', 'Text 3'));
-  groupBtn1.push(new Button('default', 'fa-shield', 'Text 4'));
-  groupBtn1.push(new Button('primary', 'fa-home', 'Text 5'));
-  groupBtn1.push(new Button('default', 'fa-beer', 'Text 6'));
-  groupBtn1.push(new Button('default', 'fa-briefcase', 'Text 7'));
-  groupBtn1.push(new Button('default', 'fa-bicycle', 'Text 8'));
-  groupBtn1.push(new Button('primary', 'fa-bomb', 'Text 9'));
-  groupBtn1.push(new Button('primary', 'fa-bell', 'Text 10'));
-  groupBtn1.push(new Button('success', 'fa-plus'));
-  groupBtn1.push(new Button('success', 'fa-history'));
+  groupBtn1.push(new Button('primary', 'fa-user-secret', 'Private Haftpflicht'));
+  groupBtn1.push(new Button('default', 'fa-bus', 'KFZ Haftpflicht'));
+  groupBtn1.push(new Button('primary', 'fa-paw', 'Tierhalterhaftpflicht'));
+  groupBtn1.push(new Button('default', 'fa-shield', 'Sonstige Haftpflicht'));
+  groupBtn1.push(new Button('primary', 'fa-home', 'Wohngebäude'));
+  groupBtn1.push(new Button('default', 'fa-beer', 'Hausrat'));
+  groupBtn1.push(new Button('default', 'fa-ambulance', 'Grundschutz'));
+  groupBtn1.push(new Button('default', 'fa-wheelchair', 'Berufsunfähigkeit'));
+  groupBtn1.push(new Button('primary', 'fa-taxi', 'Verkehr'));
+  groupBtn1.push(new Button('primary', 'fa-gavel', 'Sonstige'));
+  groupBtn1.push(new Button('gray', 'fa-plus'));
+  groupBtn1.push(new Button('gray', 'fa-history'));
   $scope.groupBtnTab1 = groupBtn1;
 
   // create example buttons tab 2
   var groupBtn2 = [];
-  groupBtn2.push(new Button('danger', 'fa-anchor', 'Text 1'));
-  groupBtn2.push(new Button('danger', 'fa-archive', 'Text 2'));
-  groupBtn2.push(new Button('danger', 'fa-cab', 'Text 3'));
-  groupBtn2.push(new Button('danger', 'fa-coffee', 'Text 4'));
-  groupBtn2.push(new Button('default', 'fa-diamond', 'Text 12'));
-  groupBtn2.push(new Button('primary', 'fa-globe', 'Text 5'));
-  groupBtn2.push(new Button('danger', 'fa-lock', 'Text 6'));
-  groupBtn2.push(new Button('default', 'fa-microphone', 'Text 7'));
-  groupBtn2.push(new Button('danger', 'fa-pie-chart', 'Text 8'));
-  groupBtn2.push(new Button('danger', 'fa-recycle', 'Text 9'));
-  groupBtn2.push(new Button('success', 'fa-plus'));
-  groupBtn2.push(new Button('success', 'fa-history'));
+  groupBtn2.push(new Button('danger', 'fa-user-secret', 'Private Haftpflicht'));
+  groupBtn2.push(new Button('danger', 'fa-bus', 'KFZ Haftpflicht'));
+  groupBtn2.push(new Button('danger', 'fa-paw', 'Tierhalterhaftpflicht'));
+  groupBtn2.push(new Button('danger', 'fa-shield', 'Sonstige Haftpflicht'));
+  groupBtn2.push(new Button('default', 'fa-home', 'Wohngebäude'));
+  groupBtn2.push(new Button('primary', 'fa-beer', 'Hausrat'));
+  groupBtn2.push(new Button('danger', 'fa-ambulance', 'Grundschutz'));
+  groupBtn2.push(new Button('danger', 'fa-wheelchair', 'Berufsunfähigkeit'));
+  groupBtn2.push(new Button('danger', 'fa-taxi', 'Verkehr'));
+  groupBtn2.push(new Button('danger', 'fa-gavel', 'Sonstige'));
+  groupBtn2.push(new Button('gray', 'fa-plus'));
+  groupBtn2.push(new Button('gray', 'fa-history'));
   $scope.groupBtnTab2 = groupBtn2;
 
   // create example avatars
