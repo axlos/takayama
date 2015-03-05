@@ -1,0 +1,29 @@
+<div class="wrapper text-center wrapper-content animated fadeInRight">
+    <h1 class="m-b-lg">Login</h1>
+
+    <div style="width: 350px;" class="center-block text-left">
+        <div class="ibox float-e-margins">
+            <div class="ibox-content white">
+                <div class="alert alert-danger" ng-if="msg">
+                    {{msg}}
+                </div>
+                <form class="m-t" role="form" ng-submit="submit()">
+                    <div class="form-group">
+                        <label>E-MAIL</label>
+                        <input type="email" class="form-control" placeholder="E-Mail" ng-model="login.email" type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>PASSWORD</label>
+                        <input type="password" class="form-control" placeholder="Password" ng-model="login.password" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary block btn-lg full-width">ANMELDEN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <p class="m-t">
+        PASSWORD VERGESSEN?
+    </p>
+    <a type="submit" class="btn btn-default btn-lg" ui-sref="register">REGISTRIEREN</a>
+</div>

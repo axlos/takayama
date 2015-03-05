@@ -33,6 +33,13 @@ function config($stateProvider, $urlRouterProvider) {
         controller: 'RegisterCtrl',
         controllerAs: 'register',
         data: { pageTitle: 'Profile' }
+    })
+    .state('login', {
+        url: "/login",
+        templateUrl: "views/login.html",
+        controller: 'LoginCtrl',
+        controllerAs: 'login',
+        data: { pageTitle: 'Login' }
     });
 }
 
