@@ -53,6 +53,13 @@
   background-color: #4F5659;
   border-color: #4F5659;
 }
+.btn-transparent {
+  background-color: transparent;
+  border-color: transparent;
+}
+.btn-transparent:hover {
+  color: white;
+}
 .btn-gray:hover{
   color: white;
 }
@@ -62,4 +69,25 @@
 .navbar-center {
   float: center!important;
   margin-right: -15px;
+  visibility: hidden;
+}
+.gray-img {
+  background-image: url("../images/gray.png");
+  background-repeat: repeat-x;
+  background-color: white;
+}
+.ibox-content.white {
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 35px -2px rgba(73,83,85,0.71);
+  -moz-box-shadow: 0px 2px 35px -2px rgba(73,83,85,0.71);
+  box-shadow: 0px 2px 35px -2px rgba(73,83,85,0.71);
+}
+.ibox-content label {
+  color: #969EA0;
+}
+.ibox-content input {
+  color: #969EA0;
+}
+.btn {
+  white-space:normal !important;
 }

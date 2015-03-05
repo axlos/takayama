@@ -34,7 +34,7 @@
 
 <!-- ControllerAs syntax -->
 <!-- Main controller with serveral data used in Inspinia theme on diferent view -->
-<body ng-controller="MainCtrl as main">
+<body ng-controller="MainCtrl as main" class="pace-done mini-navbar">
 
   <!-- Main view  -->
   <div ui-view></div>
@@ -58,6 +58,7 @@
 
   <!-- Angular scripts-->
   <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
   <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 
@@ -89,6 +90,8 @@
   <script src="scripts/controllers/profile.js"></script>
   <script src="scripts/controllers/register.js"></script>
   <script src="scripts/controllers/login.js"></script>
+  <script src="scripts/controllers/h48.js"></script>
+  <script src="scripts/services/avatar.js"></script>
   <!-- endbuild -->
 
 </body>

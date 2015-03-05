@@ -3,6 +3,7 @@
   'ui.router',
   'ui.bootstrap',
   'angular-flot',
-  'ui.checkbox'
+  'ui.checkbox',
+  'ngResource'
   ])
 })();
