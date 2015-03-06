@@ -1,6 +1,6 @@
 function config($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise("/index/add_product");
+    $urlRouterProvider.otherwise("/index/dashboard");
 
     $stateProvider
     .state('index', {

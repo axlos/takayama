@@ -21,7 +21,8 @@ $(window).bind("load resize click scroll", function() {
 // Minimalize menu when screen is less than 768px
 $(window).bind("load resize", function() {
     if ($(this).width() < 769) {
-        $('body').addClass('body-small')
+        $('body').addClass('body-small mini-navbar')
+        $('body').removeClass('mini-navbar')
     } else {
         $('body').removeClass('body-small')
     }

@@ -1,6 +1,10 @@
-
 .btn {
   border-radius: @btn-border-radius;
+  white-space:normal !important;
+}
+
+.btn-block {
+  height:100%;
 }
 
 .float-e-margins .btn {
@@ -16,7 +20,7 @@
 }
 
 .btn-success.btn-outline {
-  color: @blue;
+  color: @dimgray;
 }
 
 .btn-info.btn-outline {
@@ -61,14 +65,14 @@
 }
 
 .btn-success {
-  background-color: @blue;
-  border-color: @blue;
+  background-color: @dimgray;
+  border-color: @dimgray;
   color: #FFFFFF;
 }
 
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
-  background-color: darken(@blue, 3%);
-  border-color: darken(@blue, 3%);
+  background-color: darken(@dimgray, 3%);
+  border-color: darken(@dimgray, 3%);
   color: #FFFFFF;
 }
 
@@ -103,14 +107,14 @@
 }
 
 .btn-default {
-  background-color: @dark-gray;
-  border-color: @dark-gray;
+  background-color: @light-gray;
+  border-color: @light-gray;
   color: #FFFFFF;
 }
 
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
-  background-color: darken(@dark-gray, 3%);
-  border-color: darken(@dark-gray, 3%);
+  background-color: darken(@light-gray, 3%);
+  border-color: darken(@light-gray, 3%);
   color: #FFFFFF;
 }
 
@@ -119,8 +123,8 @@
 }
 
 .btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled]:active, .btn-default.active[disabled], fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
-  background-color: lighten(@dark-gray, 4%);
-  border-color: lighten(@dark-gray, 4%);
+  background-color: lighten(@light-gray, 4%);
+  border-color: lighten(@light-gray, 4%);
 }
 
 .btn-warning {
@@ -304,4 +308,18 @@ button.dim:before {
 button.dim:active:before {
   top: 7px;
   font-size: 50px;
+}
+
+.btn-circle-xlarge {
+  font-size: 40px;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+}
+
+.btn-transparent:hover {
+  color: white;
 }
