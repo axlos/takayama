@@ -1,0 +1,55 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+  <div class="row">
+    <div class="col-lg-12">
+      <h3 class="m-b-lg">
+        Beschreibung, warum das so einfach und toll ist und dass er den Maklervertrag ubertragt
+      </h3>
+    </div>
+    <div class="col-lg-12">
+      <div class="panel blank-panel">
+        <div class="panel-body text-center dashed">
+          Bitte ziehen Sie ihre Dokumente hierhin
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12 m-t-sm">
+      <div class="panel dimgray-bg">
+        <div class="panel-body">
+          <div class="col-lg-12 text-center">
+            <span class="btn btn-success btn-file btn-lg">
+              <i class="fa fa-plus"></i> Dokument Auswählen
+              <input type="file" nv-file-select uploader="uploader"/>
+            </span>
+          </div>
+          <div class="col-lg-12 m-t-sm">
+            <div class="form-group m-b-lg">
+                Übertrag zustimmen
+                <checkbox class="btn-primary pull-right" ng-model="registration.news"></checkbox>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="panel blank-panel">
+          <div class="panel-heading text-center">
+            <h3>
+              Dateien
+            </h3>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div ng-repeat="item in uploader.queue">
+                <div class="col-xs-10 col-md-10 col-lg-10">
+                  <span ng-bind="item.file.name"></span>
+                </div>
+                <div class="col-xs-2 col-md-2 col-lg-2">
+                  <button class="btn btn-success pull-right" ng-click="item.upload()">upload</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

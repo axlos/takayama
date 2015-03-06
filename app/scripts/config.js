@@ -1,6 +1,6 @@
 function config($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise("/index/dashboard");
+    $urlRouterProvider.otherwise("/index/upload_file");
 
     $stateProvider
     .state('index', {
@@ -11,7 +11,7 @@ function config($stateProvider, $urlRouterProvider) {
     .state('index.main', {
       url: "/main",
       templateUrl: "views/main.html",
-      data: { pageTitle: 'Main page' }
+      data: { pageTitle: 'oDesk' }
     })
     .state('index.dashboard', {
         url: "/dashboard",
@@ -32,26 +32,35 @@ function config($stateProvider, $urlRouterProvider) {
         templateUrl: "views/profile.html",
         controller: 'ProfileCtrl',
         controllerAs: 'profile',
-        data: { pageTitle: 'Profile' }
+        data: { pageTitle: 'Profil' }
     })
     .state('index.add_product', {
         url: "/add_product",
         templateUrl: "views/add_product.html",
+        controller: 'AddProductCtrl',
+        controllerAs: 'addProduct',
         data: { pageTitle: 'Produkt hinzufügen' }
+    })
+    .state('index.upload_file', {
+        url: "/upload_file",
+        templateUrl: "views/upload_file.html",
+        controller: 'UploadCtrl',
+        controllerAs: 'upload',
+        data: { pageTitle: 'Produkt Hochladen' }
     })
     .state('register', {
         url: "/register",
         templateUrl: "views/register.html",
         controller: 'RegisterCtrl',
         controllerAs: 'register',
-        data: { pageTitle: 'Profile' }
+        data: { pageTitle: 'Registrieren' }
     })
     .state('login', {
         url: "/login",
         templateUrl: "views/login.html",
         controller: 'LoginCtrl',
         controllerAs: 'login',
-        data: { pageTitle: 'Login' }
+        data: { pageTitle: 'Einloggen' }
     });
 }
 

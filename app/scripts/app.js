@@ -4,6 +4,7 @@
   'ui.bootstrap',
   'angular-flot',
   'ui.checkbox',
-  'ngResource'
+  'ngResource',
+  'angularFileUpload'
   ])
 })();
