@@ -1,4 +1,4 @@
-function Registration(email, password, terms, news) {
+function RegistrationObj(email, password, terms, news) {
   this.email = email;
   this.password = password;
   this.terms = terms;
@@ -6,7 +6,7 @@ function Registration(email, password, terms, news) {
 }
 
 function RegisterCtrl($scope) {
-    $scope.registration = new Registration();
+    $scope.registration = new RegistrationObj();
     $scope.msg = undefined;
     $scope.repassword = undefined;
 

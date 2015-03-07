@@ -1,6 +1,6 @@
 function config($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise("/index/upload_file");
+    $urlRouterProvider.otherwise("/index/dashboard");
 
     $stateProvider
     .state('index', {

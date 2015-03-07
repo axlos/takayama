@@ -1,10 +1,10 @@
-function Login(email, password) {
+function LoginObj(email, password) {
   this.email = email;
   this.password = password;
 }
 
 function LoginCtrl($scope) {
-    $scope.Login = new Login();
+    $scope.login = new LoginObj();
     $scope.msg = undefined;
 
     $scope.submit = function() {
