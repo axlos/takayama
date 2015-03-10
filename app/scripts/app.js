@@ -5,6 +5,7 @@
   'angular-flot',
   'ui.checkbox',
   'ngResource',
-  'angularFileUpload'
+  'angularFileUpload',
+  'snap'
   ])
 })();
