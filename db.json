@@ -1,0 +1,225 @@
+{
+  "avatar": [
+    "images/a1b.png",
+    "images/a2b.png",
+    "images/a3b.png"
+  ],
+  "option": [
+    {
+      "id": 1,
+      "tabId": 1,
+      "type": "primary",
+      "icon": "fa-user-secret",
+      "label": "Private Haftpflicht",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 2,
+      "tabId": 1,
+      "type": "default",
+      "icon": "fa-bus",
+      "label": "KFZ Haftpflicht",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 3,
+      "tabId": 1,
+      "type": "primary",
+      "icon": "fa-paw",
+      "label": "Tierhalterhaftpflicht",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 4,
+      "tabId": 1,
+      "type": "default",
+      "icon": "fa-shield",
+      "label": "Sonstige Haftpflicht",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 5,
+      "tabId": 1,
+      "type": "primary",
+      "icon": "fa-home",
+      "label": "Wohngebäude",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 6,
+      "tabId": 1,
+      "type": "default",
+      "icon": "fa-beer",
+      "label": "Hausrat",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 7,
+      "tabId": 1,
+      "type": "default",
+      "icon": "fa-ambulance",
+      "label": "Krankheit (Grundschutz)",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 8,
+      "tabId": 1,
+      "type": "default",
+      "icon": "fa-wheelchair",
+      "label": "Berufsunfähigkeit",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 9,
+      "tabId": 1,
+      "type": "primary",
+      "icon": "fa-taxi",
+      "label": "Rechtsschutz (Verkehr)",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 10,
+      "tabId": 1,
+      "type": "primary",
+      "icon": "fa-gavel",
+      "label": "Rechtsschutz (Sonstige)",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 11,
+      "tabId": 1,
+      "type": "success",
+      "icon": "fa-plus",
+      "label": "",
+      "url": "index.main",
+      "eye": false
+    },
+    {
+      "id": 12,
+      "tabId": 1,
+      "type": "success",
+      "icon": "fa-history",
+      "label": "",
+      "url": "index.h48",
+      "eye": false
+    },
+    {
+      "id": 13,
+      "tabId": 2,
+      "type": "danger",
+      "icon": "fa-user-secret",
+      "label": "Private Haftpflicht",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 14,
+      "tabId": 2,
+      "type": "danger",
+      "icon": "fa-bus",
+      "label": "KFZ Haftpflicht",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 15,
+      "tabId": 2,
+      "type": "danger",
+      "icon": "fa-paw",
+      "label": "Tierhalterhaftpflicht",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 16,
+      "tabId": 2,
+      "type": "danger",
+      "icon": "fa-shield",
+      "label": "Sonstige Haftpflicht",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 17,
+      "tabId": 2,
+      "type": "default",
+      "icon": "fa-home",
+      "label": "Wohngebäude",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 18,
+      "tabId": 2,
+      "type": "primary",
+      "icon": "fa-beer",
+      "label": "Hausrat",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 19,
+      "tabId": 2,
+      "type": "danger",
+      "icon": "fa-ambulance",
+      "label": "Krankheit (Grundschutz)",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 20,
+      "tabId": 2,
+      "type": "danger",
+      "icon": "fa-wheelchair",
+      "label": "Berufsunfähigkeit",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 21,
+      "tabId": 2,
+      "type": "danger",
+      "icon": "fa-taxi",
+      "label": "Rechtsschutz (Verkehr)",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 22,
+      "tabId": 2,
+      "type": "danger",
+      "icon": "fa-gavel",
+      "label": "Rechtsschutz (Sonstige)",
+      "url": "index.main",
+      "eye": true
+    },
+    {
+      "id": 23,
+      "tabId": 2,
+      "type": "success",
+      "icon": "fa-plus",
+      "label": "",
+      "url": "index.main",
+      "eye": false
+    },
+    {
+      "id": 24,
+      "tabId": 2,
+      "type": "success",
+      "icon": "fa-history",
+      "label": "",
+      "url": "index.h48",
+      "eye": false
+    }
+  ]
+}

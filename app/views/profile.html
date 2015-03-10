@@ -9,7 +9,7 @@
             </button>
           </li>
           <li>
-            <img alt="image" class="img-circle" ng-src="{{current.avatar}}">
+            <img alt="image" class="img-circle resize-img" ng-src="{{current.avatar}}">
           </li>
           <li class="next m-l-xs">
             <button class="btn btn-primary btn-circle" type="button" ng-click="next()">
@@ -26,13 +26,13 @@
         <div class="tabbable full-width-tabs">
           <ul class="nav nav-tabs">
             <li class="active take-all-space">
-              <a aria-expanded="true" data-toggle="tab" href="#tab-gral">Allgemein</a>
+              <a aria-expanded="true" data-toggle="tab" ng-href="index.profile#tab-gral">Allgemein</a>
             </li>
             <li class="take-all-space">
-              <a aria-expanded="false" data-toggle="tab" href="#tab-hobby">Beruf/Hobby</a>
+              <a aria-expanded="false" data-toggle="tab" ng-href="index.profile#tab-hobby">Beruf/Hobby</a>
             </li>
             <li class="take-all-space">
-              <a aria-expanded="false" data-toggle="tab" href="#tab-fin">Finanzen</a>
+              <a aria-expanded="false" data-toggle="tab" ng-href="index.profile#tab-fin">Finanzen</a>
             </li>
           </ul>
         </div>
@@ -85,7 +85,7 @@
             <div id="tab-hobby" class="tab-pane">
               <div class="row">
                 <div class="col-md-12">
-
+                  1
                 </div>
               </div>
             </div>
@@ -93,7 +93,7 @@
             <div id="tab-fin" class="tab-pane">
               <div class="row">
                 <div class="col-md-12">
-
+                  2
                 </div>
               </div>
             </div>

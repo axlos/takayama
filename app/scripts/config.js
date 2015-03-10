@@ -39,7 +39,7 @@ function config($stateProvider, $urlRouterProvider) {
         templateUrl: "views/add_product.html",
         controller: 'AddProductCtrl',
         controllerAs: 'addProduct',
-        data: { pageTitle: 'Produkt hinzufügen' }
+        data: { pageTitle: 'Produkt Hinzufügen' }
     })
     .state('index.upload_file', {
         url: "/upload_file",
@@ -48,12 +48,19 @@ function config($stateProvider, $urlRouterProvider) {
         controllerAs: 'upload',
         data: { pageTitle: 'Produkt Hochladen' }
     })
+    .state('index.tile_detail', {
+        url: "/tile_detail",
+        templateUrl: "views/tile_detail.html",
+        controller: 'TileDetailCtrl',
+        controllerAs: 'tileDetail',
+        data: { pageTitle: 'Produkt Hochladen' }
+    })
     .state('register', {
         url: "/register",
         templateUrl: "views/register.html",
         controller: 'RegisterCtrl',
         controllerAs: 'register',
-        data: { pageTitle: 'Registrieren' }
+        data: { pageTitle: 'Private Haftpflicht' }
     })
     .state('login', {
         url: "/login",

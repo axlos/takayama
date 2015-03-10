@@ -76,4 +76,50 @@
     height: 120px;
     line-height: 70px;
   }
+
+  .resize-img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .btn-xxl {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .btn-danger.eye-content {
+    background: -webkit-linear-gradient(45deg, fade(@red, 100%) 76%, darken(@red, 10%) 80%) !important;
+  }
+
+  .btn-primary.eye-content {
+    background: -webkit-linear-gradient(45deg, fade(@navy, 100%) 76%, darken(@navy, 10%) 80%) !important;
+  }
+
+  .btn-default.eye-content {
+    background: -webkit-linear-gradient(45deg, fade(@light-gray, 100%) 76%, darken(@light-gray, 10%) 80%) !important;
+  }
+
+  .fa-1x {
+    font-size: 1em !important;
+  }
+
+}
+
+.btn-danger.eye-content {
+  .eye-linear();
+  background: -webkit-linear-gradient(45deg, fade(@red, 100%) 83%, darken(@red, 10%) 80%);
+}
+
+.btn-primary.eye-content {
+  .eye-linear();
+  background: -webkit-linear-gradient(45deg, fade(@navy, 100%) 83%, darken(@navy, 10%) 80%);
+}
+
+.btn-default.eye-content {
+  .eye-linear();
+  background: -webkit-linear-gradient(45deg, fade(@light-gray, 100%) 83%, darken(@light-gray, 10%) 80%);
+}
+
+.fa-1x {
+  font-size: 1.3em;
 }

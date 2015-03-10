@@ -1,31 +1,37 @@
 function DashboardCtrl($scope, $interval, Avatar, Graph, Dashboard) {
 
+  $scope.$broadcast('showAjax');
+
   $scope.loadAvatars = function() {
-    $scope.avatars = Avatar.get();
+    Avatar.query({}, function (data){
+      $scope.avatars = data;
+      $scope.$broadcast('hideAjax');
+    });
   };
 
   $scope.loadGraph = function() {
     $scope.graph = Graph.get();
   };
 
-  $scope.loadBtns = function() {
-    var tab1 = Dashboard.get(0);
-    var tab2 = Dashboard.get(1);
-
-    $scope.groupBtnTab1 = tab1;
-    $scope.groupBtnTab2 = tab2;
+  $scope.loadOptions = function() {
+    Dashboard.search({
+      tabId: 1
+    }, function(data) {
+      $scope.$broadcast('hideAjax');
+      $scope.groupBtnTab1 = data;
+    });
+    var tab2 = Dashboard.search({
+      tabId: 2
+    }, function(data) {
+      $scope.$broadcast('hideAjax');
+      $scope.groupBtnTab2 = data;
+    });
   };
 
   // first load information
   $scope.loadAvatars();
   $scope.loadGraph();
-  $scope.loadBtns();
-
-  // example how to shoe an ajax on load
-  window.setTimeout(function() {
-    $("#ajax").hide();
-    $("#dashboard").show();
-  }, 1000);
+  $scope.loadOptions();
 
 };
 

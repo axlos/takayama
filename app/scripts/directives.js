@@ -71,7 +71,7 @@ function iboxTools($timeout) {
 function minimalizaSidebar($timeout) {
     return {
         restrict: 'A',
-        template: '<a class="navbar-minimalize btn btn-transparent hidden-xs" href="" ng-click="minimalize()" style="color: white;"><i class="fa fa-bars fa-2x"></i></a>',
+        template: '<a class="navbar-minimalize btn btn-transparent" href="" ng-click="minimalize()" style="color: white;"><i class="fa fa-bars fa-2x"></i></a>',
         controller: function ($scope, $element) {
             $scope.minimalize = function () {
                 $("body").toggleClass("mini-navbar");

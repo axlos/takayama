@@ -799,8 +799,13 @@ table.dataTable thead .sorting:after {
   padding-left: 0;
 }
 
+select.form-control {
+  background-color: @gray;
+  -webkit-appearance: button;
+}
+
 .form-control, .single-line {
-  background-color: transparent;
+  background-color: @gray;
   background-image: none;
   border: none;
   border-radius: 1px;
@@ -1911,4 +1916,11 @@ a.forum-item-title:hover {
     background: white;
     cursor: inherit;
     display: block;
+}
+
+.carousel {
+  background-color: @navy;
+  height: 300px;
+
+  vertical-align: middle;
 }
