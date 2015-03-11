@@ -12,7 +12,7 @@
       "icon": "fa-user-secret",
       "label": "Private Haftpflicht",
       "url": "index.main",
-      "eye": true
+      "eye": false
     },
     {
       "id": 2,
@@ -30,7 +30,7 @@
       "icon": "fa-paw",
       "label": "Tierhalterhaftpflicht",
       "url": "index.main",
-      "eye": true
+      "eye": false
     },
     {
       "id": 4,
@@ -147,7 +147,7 @@
       "icon": "fa-shield",
       "label": "Sonstige Haftpflicht",
       "url": "index.main",
-      "eye": true
+      "eye": false
     },
     {
       "id": 17,
@@ -220,6 +220,23 @@
       "label": "",
       "url": "index.h48",
       "eye": false
+    }
+  ],
+  "message": [
+    {
+      "id": 1,
+      "date": 1288323623006,
+      "content": "Example message"
+    },
+    {
+      "date": 1426087324430,
+      "content": "New message",
+      "id": 2
+    },
+    {
+      "date": 1426087327879,
+      "content": "Hello",
+      "id": 3
     }
   ]
 }

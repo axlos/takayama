@@ -416,13 +416,11 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
 }
 
 .list-group-item {
-  background-color: inherit;
+  background-color: transparent;
   border-left: none;
   border-right: none;
   border-top: none;
-
-  border-bottom: 1px solid @border-color;
-
+  border-bottom: none;
   display: block;
   margin-bottom: -1px;
   padding: 10px 15px;
@@ -436,6 +434,9 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
   overflow-x: scroll;
   overflow-y: hidden;
   width: 100%;
+  scrollbar-base-color: orange;
+  scrollbar-arrow-color: green;
+  scrollbar-DarkShadow-Color: blue;
 }
 
 /* FLOT CHART  */

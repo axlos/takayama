@@ -10,7 +10,6 @@ function TileDetailCtrl($scope, FileUploader) {
   $scope.newMsg = "";
 
   $scope.addMsg = function() {
-    console.log($scope.newMsg);
     $scope.messages.push(new Message('Alex', new Date(), $scope.newMsg));
   };
 

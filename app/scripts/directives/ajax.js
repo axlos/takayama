@@ -13,7 +13,6 @@ angular.module('inspinia')
 
       scope.$on('hideAjax', function(event) {
         $("#ajax").hide();
-        console.log('hide llamado');
       });
 
       scope.$on('showAjax', function(event) {

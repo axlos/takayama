@@ -1,6 +1,3 @@
-function MainCtrl() {
-    this.userName = 'Alex Takayama';
-    this.descriptionText = 'oDesk project';
-};
+function MainCtrl($scope) {};
 
-angular.module('inspinia').controller('MainCtrl', MainCtrl)
+angular.module('inspinia').controller('MainCtrl', ['$scope', MainCtrl]);
