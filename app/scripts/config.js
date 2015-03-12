@@ -62,6 +62,10 @@ function config($stateProvider, $urlRouterProvider) {
         controllerAs: 'register',
         data: { pageTitle: 'Private Haftpflicht' }
     })
+    .state('landing', {
+        url: "/landing",
+        templateUrl: "views/landing.html"
+    })
     .state('login', {
         url: "/login",
         templateUrl: "views/login.html",
