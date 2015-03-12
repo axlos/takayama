@@ -4,14 +4,21 @@ body {
   font-size: 14px;
   color: @text-color;
   overflow-x: hidden;
+}
 
-  scrollbar-face-color: #ffffff;
-    scrollbar-shadow-color: #2D2C4D;
-    scrollbar-highlight-color:#7D7E94;
-    scrollbar-3dlight-color: #7D7E94;
-    scrollbar-darkshadow-color: #2D2C4D;
-    scrollbar-track-color: #7D7E94;
-    scrollbar-arrow-color: #C1C1D1;
+/* Let's get this party started */
+.scroll::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+.scroll::-webkit-scrollbar-track {
+    background: @navy;
+}
+
+/* Handle */
+.scroll::-webkit-scrollbar-thumb {
+    background: @dark-gray;
 }
 
 body.boxed-layout {
