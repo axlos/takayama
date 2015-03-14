@@ -82,4 +82,9 @@ angular.module('inspinia')
 })
 .constant('Config', {
   'server': 'localhost:3000' // Config here JSON server
-});
+})
+.config(function(snapRemoteProvider) {
+  snapRemoteProvider.globalOptions = {
+    touchToDrag: false
+  }
+})

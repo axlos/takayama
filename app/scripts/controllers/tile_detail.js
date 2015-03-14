@@ -13,16 +13,10 @@ function TileDetailCtrl($scope, FileUploader) {
     $scope.messages.push(new Message('Alex', new Date(), $scope.newMsg));
   };
 
-  var options = {
-    container: $('#img-carousel'),
-    carousel: true
-  };
-
-  var slides = $scope.slides = [{
-    image: 'images/private1.png'
-  }, {
-    image: 'images/private2.png'
-  }];
+  $scope.cards = [
+    'views/cards/allianz.html',
+    'views/cards/custom.html'
+  ];
 
 };
 
