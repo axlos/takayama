@@ -85,6 +85,7 @@ angular.module('inspinia')
 })
 .config(function(snapRemoteProvider) {
   snapRemoteProvider.globalOptions = {
-    touchToDrag: false
+    touchToDrag: false,
+    maxPosition: 200,
   }
 })

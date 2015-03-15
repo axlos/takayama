@@ -1,11 +1,12 @@
-<div snap-drawer="right" ng-include="'views/common/contact.html'" ng-controller="ContactCtrl"></div>
+<div snap-drawer="right" ng-include="'views/common/contact.html'" ng-controller="ContactCtrl">
+</div>
+
+<div snap-drawer="left" ng-include="'views/common/navigation.html'" ng-controller="ContactCtrl">
+</div>
 
 <snap-content data-touchToDrag="true">
   <!-- Wrapper-->
   <div id="wrapper">
-
-      <!-- Navigation -->
-      <div ng-include="'views/common/navigation.html'"></div>
       <!-- Page wraper -->
       <!-- ng-class with current state name give you the ability to extended customization your view -->
       <div id="page-wrapper" class="gray-bg {{$state.current.name}}">
