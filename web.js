@@ -1,8 +1,8 @@
 var gzippo = require('gzippo');
 var express = require('express');
 var morgan = require('morgan');
-var app = express();
 var jsonServer = require('json-server');
+var app = express();
 
 var router = jsonServer.router('db.json');
 var server = jsonServer.create();
