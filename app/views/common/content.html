@@ -4,26 +4,22 @@
 <div snap-drawer="left" ng-include="'views/common/navigation.html'" ng-controller="ContactCtrl">
 </div>
 
-<snap-content data-touchToDrag="true">
-  <!-- Wrapper-->
-  <div id="wrapper">
-      <!-- Page wraper -->
-      <!-- ng-class with current state name give you the ability to extended customization your view -->
-      <div id="page-wrapper" class="gray-bg {{$state.current.name}}">
+<!-- Wrapper-->
+<div id="wrapper">
+  <!-- Page wraper -->
+  <!-- ng-class with current state name give you the ability to extended customization your view -->
+  <snap-content data-touchToDrag="true">
+    <div id="page-wrapper" class="gray-bg {{$state.current.name}}">
 
-          <!-- Page wrapper -->
-          <div ng-include="'views/common/topnavbar.html'"></div>
+      <!-- Page wrapper -->
+      <div ng-include="'views/common/topnavbar.html'"></div>
 
-          <!-- Main view  -->
-          <div ui-view>
-          </div>
+      <!-- Main view  -->
+      <div ui-view></div>
 
-          <!-- Footer -->
-          <div ng-include="'views/common/footer.html'"></div>
+    </div>
+  </snap-content>
+  <!-- End page wrapper-->
 
-      </div>
-      <!-- End page wrapper-->
-
-  </div>
-  <!-- End wrapper-->
-</snap-content>
+</div>
+<!-- End wrapper-->
