@@ -7,6 +7,9 @@ module.exports = function (grunt) {
     // Show grunt task time
     require('time-grunt')(grunt);
 
+    // enable json server
+    grunt.loadNpmTasks('grunt-json-server');
+
     // Configurable paths for the app
     var appConfig = {
         app: 'app',
@@ -124,7 +127,7 @@ module.exports = function (grunt) {
                             '*.html',
                             'views/{,*/}*.html',
                             'styles/patterns/*.*',
-                            'img/{,*/}*.*'
+                            'images/{,*/}*.*'
                         ]
                     },
                     {
@@ -185,6 +188,24 @@ module.exports = function (grunt) {
         },
         usemin: {
             html: ['dist/index.html']
+        },
+        json_server: {
+          options: {
+              port: 3000,
+              hostname: 'localhost',
+              db: 'db.json'
+          }
+        },
+        concurrent: {
+          server: {
+            tasks: [
+              'json_server',
+              'watch'
+            ],
+            options: {
+              logConcurrentOutput: true
+            }
+          }
         }
     });
 
@@ -195,7 +216,7 @@ module.exports = function (grunt) {
       grunt.task.run([
         'clean:server',
         'connect:livereload',
-        'watch'
+        'concurrent:server'
       ]);
     });
 
@@ -215,10 +236,10 @@ module.exports = function (grunt) {
       'watch'
 
     // Run build version of app
-    grunt.registerTask('server', [
+    /*grunt.registerTask('server', [
         'build',
         'connect:dist:keepalive'
-    ]);
+    ]);*/
 
     // Build version for production
     grunt.registerTask('build', [
