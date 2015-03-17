@@ -12,4 +12,4 @@ server.listen(3000)
 app.use(morgan('dev'));
 app.use(gzippo.staticGzip("" + __dirname + "/dist"));
 
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT);
