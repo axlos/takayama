@@ -191,16 +191,14 @@ module.exports = function (grunt) {
         },
         json_server: {
           options: {
-              port: 3000,
-              hostname: 'localhost',
-              db: 'db.json'
+              port: 2000,
+              hostname: 'localhost'
           }
         },
         concurrent: {
           server: {
             tasks: [
-              'json_server',
-              'watch'
+              'json_server'
             ],
             options: {
               logConcurrentOutput: true
@@ -216,7 +214,7 @@ module.exports = function (grunt) {
       grunt.task.run([
         'clean:server',
         'connect:livereload',
-        'concurrent:server'
+        'watch'
       ]);
     });
 
