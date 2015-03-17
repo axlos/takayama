@@ -81,7 +81,7 @@ angular.module('inspinia')
   $rootScope.$state = $state;
 })
 .constant('Config', {
-  'server': 'localhost:3000' // Config here JSON server
+  'server': '0.0.0.0:3000' // Config here JSON server
 })
 .config(function(snapRemoteProvider) {
   snapRemoteProvider.globalOptions = {
