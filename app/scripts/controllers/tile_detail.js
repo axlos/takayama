@@ -11,6 +11,7 @@ function TileDetailCtrl($scope, FileUploader) {
 
   $scope.addMsg = function() {
     $scope.messages.push(new Message('Alex', new Date(), $scope.newMsg));
+    $('#newTxt').val('');
   };
 
   $scope.cards = [

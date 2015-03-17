@@ -42,43 +42,47 @@
 
             <div id="tab-gral" class="tab-pane active">
               <form class="form-horizontal">
+                <div class="scroll-y">
+                  <div class="m-l-md m-r-md" style="height: 200px;">
 
-                <div class="form-group">
-                  <label class="col-lg-2 control-label">Alter</label>
-                  <div class="col-lg-10">
-                    <input class="form-control" ng-model="current.age">
+                    <div class="form-group">
+                      <label class="col-lg-2 control-label">Alter</label>
+                      <div class="col-lg-10">
+                        <input class="form-control" ng-model="current.age">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="col-lg-2 control-label">Geschlecht</label>
+                      <div class="col-lg-10">
+                        <select class="form-control m-b" ng-model="current.sex">
+                          <option value="unkown">Unbekannt</option>
+                          <option value="male">Männlich</option>
+                          <option value="female">Weiblich</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="col-lg-2 control-label">Familienstand</label>
+                      <div class="col-lg-10">
+                        <select class="form-control m-b" name="status" ng-model="current.status">
+                          <option value="leding">Leding</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="col-lg-2 control-label">Beziehung zum Haupt-Avatar</label>
+                      <div class="col-lg-10">
+                        <select class="form-control m-b" name="relationship" ng-model="current.relationship">
+                          <option value="ich">Ich</option>
+                        </select>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
-
-                <div class="form-group">
-                  <label class="col-lg-2 control-label">Geschlecht</label>
-                  <div class="col-lg-10">
-                    <select class="form-control m-b" ng-model="current.sex">
-                      <option value="unkown">Unbekannt</option>
-                      <option value="male">Männlich</option>
-                      <option value="female">Weiblich</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label class="col-lg-2 control-label">Familienstand</label>
-                  <div class="col-lg-10">
-                    <select class="form-control m-b" name="status" ng-model="current.status">
-                      <option value="leding">Leding</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label class="col-lg-2 control-label">Beziehung zum Haupt-Avatar</label>
-                  <div class="col-lg-10">
-                    <select class="form-control m-b" name="relationship" ng-model="current.relationship">
-                      <option value="ich">Ich</option>
-                    </select>
-                  </div>
-                </div>
-
               </form>
             </div>
 

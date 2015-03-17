@@ -29,7 +29,7 @@
     "angular-flot": "~0.0.6",
     "flot.curvedlines": "*",
     "flot.tooltip.pib": "~0.6.7",
-    "angular-bootstrap-checkbox": "~0.3.1",
+    "iCheck": "~1.0.2",
     "angular-snap": "~1.8.1",
     "blueimp-gallery": "~2.15.2",
     "angular-file-upload": "~1.1.5"

@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    fix_height();
+  fix_height();
 
 });
 

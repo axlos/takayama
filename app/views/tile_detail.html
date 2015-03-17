@@ -17,7 +17,7 @@
 
       <div class="tabbable full-width-tabs">
         <ul class="nav nav-tabs">
-          <li class="active take-all-space">
+          <li class="active take-all-space ">
             <a aria-expanded="true" data-toggle="tab" ng-href="index.tile_detail#tab-papers">Dokumente</a>
           </li>
           <li class="take-all-space">
@@ -34,9 +34,10 @@
 
           <div id="tab-papers" class="tab-pane active">
             <div class="panel panel-gray">
+
               <div class="panel-body">
-                <div class="row">
-                  <div ng-repeat="item in uploader.queue">
+                <div ng-repeat="item in uploader.queue">
+                  <div class="row m-b-sm">
                     <div class="col-xs-10 col-md-10 col-lg-10">
                       <span ng-bind="item.file.name"></span>
                     </div>
@@ -46,52 +47,67 @@
                   </div>
                 </div>
               </div>
+
               <div class="panel-footer">
                 <span class="btn btn-success btn-file btn-lg btn-block">
                   <i class="fa fa-plus"></i> Dokument Auswählen
                   <input type="file" nv-file-select uploader="uploader"/>
                 </span>
               </div>
-            </div>
 
+            </div>
           </div>
 
           <div id="tab-features" class="tab-pane">
             <form class="form-horizontal m-t-lg">
+              <div class="scroll-y">
+                <div class="m-l-md m-r-md" style="height: 150px;">
 
-              <div class="form-group">
-                <label class="col-lg-3">Versicherungsnehmer</label>
-              </div>
+                  <div class="form-group">
+                    <label class="col-lg-3">Versicherungsnehmer</label>
+                  </div>
 
-              <div class="form-group">
-                <label class="col-lg-3">Ich</label>
-                <div class="col-lg-9">
-                  <checkbox class="btn-primary pull-right" ng-model="registration.terms"></checkbox>
+                  <div class="form-group">
+                    <label class="col-lg-3 col-xs-3" for="terms">Ich</label>
+                    <div class="col-lg-9 col-xs-9">
+                      <input type="checkbox" name="terms" id="terms" class="pull-right">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-lg-3">Versicherte Personen 1</label>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-lg-3">Versicherte Personen 2</label>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-lg-3">Versicherte Personen 3</label>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-lg-3">Versicherte Personen 4</label>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-lg-3">Versicherte Personen 5</label>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-lg-3">Versicherte Personen 6</label>
+                  </div>
+
                 </div>
               </div>
-
-              <div class="form-group">
-                <label class="col-lg-3">Versicherte Personen</label>
-              </div>
-
-              <div class="form-group">
-                <label class="col-lg-3">Ich</label>
-                <div class="col-lg-9">
-                  <checkbox class="btn-primary pull-right" ng-model="registration.terms"></checkbox>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label class="col-lg-3">Versicherungssumme</label>
-              </div>
-
             </form>
           </div>
 
           <div id="tab-news" class="tab-pane">
             <div class="panel panel-gray">
+
               <div class="panel-body" style="padding: 0px;">
-                <div class="chat-discussion">
+                <div class="chat-discussion" style="height: 150px;">
                   <div class="chat-message" ng-repeat="msg in messages">
                     <img class="message-avatar" src="images/a1b.png" alt="">
                     <div class="message">
@@ -102,16 +118,18 @@
                   </div>
                 </div>
               </div>
+
               <div class="panel-footer">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Verfasse eine Nachricht..." ng-model="newMsg">
+                  <input type="text" class="form-control" placeholder="Verfasse eine Nachricht..." ng-model="newMsg" id="newTxt">
                   <span class="input-group-btn">
-                    <button class="btn btn-default" type="button" ng-click="addMsg()">
+                    <button class="btn btn-primary" type="button" ng-click="addMsg()">
                       <i class="fa fa-envelope-o"></i>
                     </button>
                   </span>
                 </div>
               </div>
+
             </div>
           </div>
 
