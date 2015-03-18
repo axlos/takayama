@@ -7,7 +7,7 @@ body {
 <div class="wrapper text-center wrapper-content gray-img animated fadeIn">
     <h1 class="m-b-lg">Einfach &amp; kostenlos anmelden</h1>
 
-    <div style="width: 350px;" class="center-block text-left">
+    <div style="width: 280px;" class="center-block text-left">
         <div class="ibox float-e-margins">
             <div class="ibox-content white">
                 <div class="alert alert-danger" ng-if="msg">
@@ -28,11 +28,11 @@ body {
                     </div>
                     <div class="form-group">
                         <label>AGB AKZEPTIEREN</label>
-                        <checkbox class="btn-primary pull-right" ng-model="registration.terms"></checkbox>
+                        <input type="checkbox" name="terms" id="terms" class="pull-right" ng-model="registration.terms">
                     </div>
                     <div class="form-group m-b-lg">
                         <label>ZUM NEWSLETTER ANMELDEN</label>
-                        <checkbox class="btn-primary pull-right" ng-model="registration.news"></checkbox>
+                        <input type="checkbox" name="terms" id="terms" class="pull-right" ng-model="registration.news">
                     </div>
 
                     <button type="submit" class="btn btn-primary block btn-lg full-width">REGISTRIEREN</button>
